@@ -26,7 +26,11 @@ li a {
 }
 
 .navbar a:hover{
-    color: #2670a1;
+    color: rgb(0, 153, 255);
+}
+
+.button:hover {
+    color: rgb(84, 223, 233); 
 }
 
 .button {
