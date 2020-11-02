@@ -1,0 +1,132 @@
+body{
+    background: #262525;
+    color: #e5e5e5;
+    margin: 2% 7%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 9%;
+}
+
+.bread{
+    display: none;
+}
+
+.bread div{
+    width: 25px;
+    height: 3px;
+    background-color: #E5E5E5;
+    margin: 5px;
+}
+
+li{
+    
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    
+    
+}
+
+li a {
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #2670a1;
+}
+
+.button {
+    outline: none;
+    background: #262525;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: solid 1px #4744D9;
+    border-radius: 30px;
+    color: #4744D9
+    
+    }
+
+.post-one{
+    /* align-items: center; */
+    text-align: center;
+}
+
+.post-text{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form {
+    max-width: 600px;
+    margin: 1rem auto;
+    display: grid;
+    outline: none;
+    
+}
+.form input{
+ margin: .5rem 0;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    
+}
+
+.footer{
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
+
+.subscribe-btn {
+    background: #2670a1;
+    color: #E5E5E5;
+}
+
+.comment {
+    height: 3rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.post-one img{
+    height: 40rem;
+}
+
+
+@media screen and ( max-width: 600px) {
+   body{
+       align-content: center;
+   }
+   
+    .bread{
+       display: block;
+       margin-top: 4%;
+       margin-right: 10%;
+   }
+
+   .navbar{
+       display: none;
+   }
+
+   .post-one img{
+    margin-top: 5%;   
+    height: 22rem;
+    width: 19rem;
+    
+}
+
+h1{
+    font-size: 20px;
+}
+.post-text{
+    font-size: 15px;
+}
+
+}
