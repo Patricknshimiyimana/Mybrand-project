@@ -301,11 +301,13 @@ position: fixed;
         transition: transform 0.5s ease-in;
 
     }
+
+    .nav-bar img{
+        margin-right: -140%;
+    }
  }
 
- .nav-bar img{
-     margin-right: -140%;
- }
+
 
  .nav-active{
     transform: translateX(0%);
