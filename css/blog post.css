@@ -21,6 +21,7 @@ body{
     margin: 5px;
 }
 
+
 li{
     
     display: inline;
@@ -35,7 +36,7 @@ li a {
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar-list a:hover{
     color: rgb(0, 153, 255);
 }
 
@@ -110,26 +111,61 @@ h1{
    
     .bread{
        display: block;
-       margin-top: 4%;
-       margin-right: 10%;
+       /* margin-top: 5%; */
+       margin-right: 15%;
    }
 
-   .navbar{
-       display: none;
-   }
+   .nav-bar{
+    display: grid;
+background-color: #262525;
+grid-template-columns: 15% 85%;
+/* justify-content: space-between; */
+justify-items: end;
+align-items: center;
+/* width: 100%; */
+top: 0;
+left: 0;
+ right: 0; 
+margin: 0;
+position: fixed;
+}
 
-   .post-one img{
-    margin-top: 5%;   
-    height: 22rem;
-    width: 19rem;
+   .navbar-list{
+        position: absolute;
+        right: 0;
+        height: 52vh;
+        top: 3vh;
+        background-color: #262525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        margin-top: 8%;
+
+    }
+
+    .post-one img{
+        margin-top: 5%;   
+        height: 22rem;
+        width: 19rem;
+        
+    }
     
-}
+    h1{
+        font-size: 20px;
+    }
+    .post-text{
+        font-size: 15px;
+    }
 
-h1{
-    font-size: 20px;
-}
-.post-text{
-    font-size: 15px;
-}
+    .nav-bar h2{
+        display: inline;
+        width: 40%;
+        
+   }
 
+   .nav-active{
+    transform: translateX(0%);
 }
