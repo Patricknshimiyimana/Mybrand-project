@@ -3,7 +3,7 @@ body{
 }
 
 .nav-bar{
-    display: grid;
+    /* display: grid; */
 background-color: #262525;
 grid-template-columns: 50%;
 align-items: center;
