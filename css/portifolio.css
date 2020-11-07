@@ -25,7 +25,6 @@ button:focus{
 }
 
 .button:hover{
-    fill: #4744D9;
     color: rgb(84, 223, 233);
 }
 
