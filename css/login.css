@@ -2,6 +2,19 @@ body{
     background:#262525;
 }
 
+.nav-bar{
+    /* display: grid; */
+background-color: #262525;
+grid-template-columns: 50%;
+align-items: center;
+width: 100%;
+top: 0;
+left: 0;
+ right: 0; 
+
+position: fixed;
+}
+
 li{
     
     display: inline;
@@ -27,11 +40,10 @@ color: #4744D9
 
 }
 
-.nav-bar{
-    display: flex;
-justify-content: space-between;
+.navbar-list a:hover{
+    color: rgb(0, 153, 255);
+    }
 
-}
 
 li a {
     color: #E5E5E5;

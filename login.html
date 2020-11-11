@@ -9,24 +9,27 @@
 <body>
     <div>
 
-        <!-- <header>
+        <header>
             <nav  class="nav-bar" >
                 
-               <img src="logo.PNG" alt="">
+               <!-- <img src="./assets/logo.PNG" alt=""> -->
                                
-                <ul class="navbar" >
+                <ul class="navbar-list" >
                       
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#projects">Project</a> </li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="login.html"><button class="button">Login</button></a></li>
-     
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <hr>
                 </ul> 
+                
+    
+                <div class="bread">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
                  
             </nav>
-        </header> -->
+        </header>
 
 
         <!-- login form-->
@@ -39,14 +42,12 @@
                 <form>
                     <img src="./assets/logo.PNG" alt=""> 
                     <h2>Login</h2>
-                    <input type="email"  id="email-input" placeholder="email">
-                    <input type="password"  id="password-input" placeholder="password">
-                    <input class="login-btn" type="submit" value="Login" class="submit-btn" onclick="validateLogin()" >
+                    <input type="email" value="" placeholder="email">
+                    <input type="text" value="" placeholder="password">
+                    <input class="login-btn" type="button" value="Login" class="submit-btn">
                 </form>
             </div>
 
     </div>
-
-<script src="./js/validation.js"></script>
 </body>
 </html>
