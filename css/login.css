@@ -1,0 +1,125 @@
+body{
+    background:#262525;
+}
+
+.nav-bar{
+    /* display: grid; */
+background-color: #262525;
+grid-template-columns: 50%;
+align-items: center;
+width: 100%;
+top: 0;
+left: 0;
+ right: 0; 
+
+position: fixed;
+}
+
+li{
+    
+    display: inline;
+    color: #E5E5E5;
+    padding: 10px;
+    font-size: 20px;
+    
+    
+}
+
+.button {
+    
+background: #262525;
+width: 100px;
+height: 30px;
+font-size: 20px;
+border: solid 1px #4744D9;
+border-radius: 30px;
+
+
+
+color: #4744D9
+
+}
+
+.navbar-list a:hover{
+    color: rgb(0, 153, 255);
+    }
+
+
+li a {
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+
+
+.login{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    margin-right: 8rem;
+    align-items: center;
+}
+
+form {
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(216, 211, 211, 0.034), 0 6.7px 5.3px rgba(197, 193, 193, 0.048), 0 12.5px 10px rgba(190, 185, 185, 0.06),
+    0 22.3px 17.9px rgba(197, 191, 191, 0.072),
+    0 41.8px 33.4px rgba(189, 183, 183, 0.086),
+    0 100px 80px rgba(185, 179, 179, 0.12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: -15%;
+}
+
+form h2 {
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 1rem;
+     background: transparent;
+     border-radius: 20px;
+     border: 1px solid white;
+     margin: 1rem 0;
+     color: #E5E5E5;
+}
+
+input:focus {
+    border: none;
+    border-radius: 50px;
+}
+.submit-btn{
+    background: rgb(0, 153, 255);
+     max-width: 100%;
+     border: none;
+     outline: none;
+     color: #E5E5E5;
+}
+
+.login-btn{
+    cursor: pointer;
+    background: rgb(0, 153, 255);
+    border: none;
+     outline: none;
+}
+
+img {
+    /* margin-top: 3rem; */
+    height: 4rem;
+    /* margin-left: 10rem; */
+}
+
+@media screen and ( max-width:600px) {
+    form{
+        width: 70%;
+        text-align: center;
+        margin-left: 25%;
+    }
+}
+ 
