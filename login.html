@@ -39,12 +39,14 @@
                 <form>
                     <img src="./assets/logo.PNG" alt=""> 
                     <h2>Login</h2>
-                    <input type="email" value="" placeholder="email">
-                    <input type="text" value="" placeholder="password">
-                    <input class="login-btn" type="button" value="Login" class="submit-btn">
+                    <input type="email"  id="email-input" placeholder="email">
+                    <input type="password"  id="password-input" placeholder="password">
+                    <input class="login-btn" type="submit" value="Login" class="submit-btn" onclick="validateLogin()" >
                 </form>
             </div>
 
     </div>
+
+<script src="./js/validation.js"></script>
 </body>
 </html>

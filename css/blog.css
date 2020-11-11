@@ -106,7 +106,6 @@ grid-template-columns: 2fr 1fr;
 @media screen and (max-width: 600px) {
 
     body{
-        overflow: hidden;
         align-content: center;
     }
     
@@ -155,6 +154,17 @@ grid-template-columns: 2fr 1fr;
 
    .wrap-posts{
        margin-top: 5%;
+   }
+
+
+   .footer{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .footer-foot{
+       text-align: center;
    }
 
 }

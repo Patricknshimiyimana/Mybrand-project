@@ -4,6 +4,7 @@
     color: #E5E5E5;
 }
 
+
 .navbar-list a:hover{
 color: rgb(0, 153, 255);
 }
@@ -54,12 +55,12 @@ color: #4744D9
 
 .content {
 
-height: 90vh;
+height: 93vh;
 font-size: 2rem; 
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin: 0 3rem;
+margin:0 3rem;
 
 }
 
@@ -94,10 +95,16 @@ li a {
     
 }
 
+.about-wrapper{
+    height: 93vh;
+}
+
+
 .about {
     font-size: 2rem;
     text-align: center;
-    /* margin: 0 3rem; */
+    /* margin: 2rem 3rem; */
+    /* margin-bottom: 10%; */
 }
 
 .image {
@@ -136,7 +143,7 @@ height: 267px;
 
 .wrap-blog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 30% 30% 30%;
     grid-gap: 1rem;
     margin: 0 3rem;
     font-size: 2rem;
@@ -250,6 +257,10 @@ position: fixed;
     
  }
 
+ #about{
+     margin-top: 50px;
+ }
+
  .wrap{
     display: flex;
     justify-content: space-between;
@@ -266,6 +277,11 @@ position: fixed;
 .wrap-project{
     display: flex;
     flex-direction: column;
+}
+
+.wrap-blog{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact{
@@ -304,6 +320,16 @@ position: fixed;
 
     .nav-bar img{
         margin-right: -140%;
+    }
+
+    .left{
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+    }
+
+    .address{
+        justify-content: center;
     }
  }
 

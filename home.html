@@ -50,16 +50,16 @@
              </div>
            
         </div>
-
+        <!-- <hr> -->
     </section>
 
      <!-- --ABOUT PAGE-- -->
-     <div class="about-wrapper">
-        <div class="about" id="about">
+     <div class="about-wrapper" id="about">
+        <div class="about">
          <h2>ABOUT ME</h2>
          <p>Hi there, I’m Patrick. I live in Kigali-Rwanda,
              I do programming, web development and designing.</p>
-             <h2>My skills</h2>
+             <h3>My skills</h2>
         </div> 
          
         
@@ -246,11 +246,11 @@
             
             <div class="right">
                 
-                <form>
-                    <input type="text" value="" placeholder="name">
-                    <input type="text" value="" placeholder="Email">
-                   <textarea name="" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
-                    <input type="button" value="Send" class="submit-btn">
+                <form name="contactForm">
+                    <input id="name" name="fname" type="text" value="" placeholder="name">
+                    <input id="email" type="email" value="" placeholder="email">
+                   <textarea id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                    <input id="send" type="submit" value="Send" class="submit-btn" onclick="validateForm()" >
                 </form>
             </div>
         
@@ -308,6 +308,7 @@
 
  </div> 
 
+ <script src="./js/home.js"></script>
  <script src="./js/navbar.js"></script>
 </body>
 </html>

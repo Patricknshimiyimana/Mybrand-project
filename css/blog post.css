@@ -63,6 +63,7 @@ li a {
 .post-text{
     max-width: 1000px;
     margin: auto;
+    text-align: start;
 }
 
 .form {
