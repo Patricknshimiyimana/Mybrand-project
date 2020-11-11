@@ -1,0 +1,39 @@
+
+    body{
+        text-align: center;
+        background-color: rgb(214, 212, 212);
+    }
+
+.navbar-left{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #a5aaad;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navbar-left a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar-left .active-link{
+    color: blue;
+    border-bottom: 3px solid blue;
+    padding-bottom: 12px;
+}
+
+.post-body {
+    display: grid;
+    padding: 0% 35%;
+    
+}
+
+.post-btn {
+    margin-top: 5%;
+    padding: 1.5%;
+}
+
+.container {
+    margin-top: 5%;
+}
