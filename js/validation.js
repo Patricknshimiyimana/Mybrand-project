@@ -15,4 +15,27 @@ if (email === '' || password === '') {
 }
 
 
+// blog forms validation
+
+// blog subscribe form
+
+function subscribeForm() {
+    let email = document.getElementById('email-form').value
+
+    if (email === '') {
+        alert('Please enter your email to subscribe')
+    }
+}
+
+
+// blog post comment form validation
+
+function commentForm() {
+    let comment = document.getElementById('comment').value
+
+    if (comment === '') {
+        alert('please write your comment and submit')
+    }
+}
+
 
