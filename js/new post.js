@@ -69,4 +69,10 @@ e.preventDefault();
 
 
 
+// // GRABBING DATA FROM THE DATABASE TO UI
 
+// db.collection('posts').get().then((snapshot) => {
+//     snapshot.docs.forEach(doc => {
+//         console.log(doc)
+//     })
+// })
