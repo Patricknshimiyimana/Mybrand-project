@@ -104,6 +104,18 @@ h1{
     height: 40rem;
 }
 
+.comment-div {
+    box-shadow: rgb(194, 194, 194) 0px 0px 5px;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.comment-head{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media screen and ( max-width: 600px) {
    body{
