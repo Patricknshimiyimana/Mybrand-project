@@ -67,12 +67,14 @@ e.preventDefault();
     uploadImage();
 } )
 
+const auth = firebase.auth();
+
+auth.onAuthStateChanged(user => {
+    if (user) {
+        
+    } else {
+        window.location.href = 'login.html';
+    }
+});
 
 
-// // GRABBING DATA FROM THE DATABASE TO UI
-
-// db.collection('posts').get().then((snapshot) => {
-//     snapshot.docs.forEach(doc => {
-//         console.log(doc)
-//     })
-// })

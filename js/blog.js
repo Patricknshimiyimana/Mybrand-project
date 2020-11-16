@@ -35,6 +35,26 @@ db.collection('posts').get().then((snapshot) => {
     })
 })
 
+const auth = firebase.auth();
+let loginBtn = document.getElementById('login-button');
+let logoutBtn = document.getElementById('logout-button');
+
+auth.onAuthStateChanged(user => {
+    if (user) {
+        logoutBtn.style.display = 'inline';
+        loginBtn.style.display = 'none';
+    } else {
+        logoutBtn.style.display = 'none';
+        loginBtn.style.display = 'inline';
+    }
+});
+
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+})
+
+
 // saving the data (comments) to the firestore
 
 // userComment.addEventListener('click', (e) => {
