@@ -247,9 +247,22 @@
             <div class="right">
                 
                 <form name="contactForm">
-                    <input id="name" name="fname" type="text" value="" placeholder="name">
-                    <input id="email" type="email" value="" placeholder="email">
-                   <textarea id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                    <p id="validation-msg"></p>
+                    <div class="name-input">
+                        <input id="name" name="fname" type="text" value="" autocomplete="off" required =''>
+                    <label for="name" class="name-label"><span class="user-name">Name</span></label>
+                    </div>
+
+                    <div class="name-input">
+                        <input id="email" type="email" value="" autocomplete="off" required = ''>
+                        <label for="name" class="name-label"><span class="user-name">Email</span></label>
+                    </div>
+                    
+                   <div class="name-input">
+                    <input type="text" id="message" autocomplete="off" required>
+                    <label for="name" class="name-label"><span class="user-name">Your message</span></label>
+                   </div>
+
                     <input id="send" type="submit" value="Send" class="submit-btn" onclick="validateForm()" >
                 </form>
             </div>
@@ -311,6 +324,7 @@
  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
  <script src="./js/firebase.js"></script>
+ <script src="./js/user messages.js"></script>
  <script src="./js/home.js"></script>
  <script src="./js/navbar.js"></script>
 </body>

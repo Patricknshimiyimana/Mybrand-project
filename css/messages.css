@@ -1,13 +1,21 @@
 
+h2 {
+    text-align: center;
+}
+
 .message {
     text-align: center;
     margin: 2% 3%;
     border: 1px solid grey;
 }
 
+#sender-email {
+    font-size: 14px;
+}
+
 .wrap-messages{
     display: grid;
-    grid-template-columns: ;
+    /* grid-template-columns: ; */
     padding: 2%;
 }
 
