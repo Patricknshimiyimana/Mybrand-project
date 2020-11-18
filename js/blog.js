@@ -8,7 +8,7 @@ function renderPost(doc) {
     let postDiv =  document.createElement('div');
     // let a = document.createElement('a');
     // let postImage = document.createElement('img');
-    let postTitle = document.createElement('h2');
+    let postTitle = document.createElement('a');
     let postBody = document.createElement('p');
     let postImage = document.createElement('img');
 
@@ -24,6 +24,12 @@ function renderPost(doc) {
 
 
     postWrap.appendChild(postDiv);
+
+    // reading single post
+
+    postTitle.addEventListener('click', (e) => {
+        location.assign(`blog post.html#${doc.id}`);
+    })
 
 }
 
