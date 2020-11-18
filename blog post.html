@@ -52,18 +52,39 @@
         Suscipit alias tempore molestias dignissimos provident id eum recusandae, ad, laborum consequuntur voluptate. Dolorem assumenda explicabo quos accusantium dolore perspiciatis dolores fugit nulla mollitia nisi! Omnis molestiae voluptatem nemo sunt!</p>
     </div>
 
+    <div class="comments-wrapper" id="comments-wrapper">
+
+        <h1>Comments</h1>
+
+        <div class="comment-div" id="comment-div">
+            <div class="comment-head">
+                <p class="commenter-name"> -anonymous- </p>
+                <p class="comment-time"> a few seconds ago</p>
+            </div>
+
+                 <p class="comment-body">hello there</p>
+            
+           </div>
+
+    </div>    
+
     <div>
         <form class="form">
 
             <h1>Leave a comment</h1>
     
-            <input id="comment" class="comment" type="text" placeholder="Your comment">
-            <input class="subscribe-btn" type="submit" value="comment" onclick="commentForm()">
+            <input id="comment-content" class="comment" type="text" placeholder="Your comment">
+            <input id="comment-btn" class="subscribe-btn" type="submit" value="comment" onclick="commentForm()">
         </form>
     </div>
    </div> 
 
+   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+   <script src="firebase.js"></script>
    <script src="./js/navbar.js"></script>
    <script src="./js/validation.js"></script>
+   <script src="./js/comment post.js"></script>
 </body>
 </html>
