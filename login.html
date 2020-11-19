@@ -43,9 +43,20 @@
                     <img src="./assets/logo.PNG" alt=""> 
                     <h2>Login</h2>
                     <p id="error-msg"></p>
-                    <input id="email-input" type="email" value="" placeholder="email">
-                    <input id="password-input" type="password" value="" placeholder="password">
+                    <!-- <input id="email-input" type="email" value="" placeholder="email"> -->
+                    <div class="name-input">
+                        <input id="email-input" type="email" value="" autocomplete="off" required =''>
+                        <label for="email" class="name-label"><span class="user-name">Email</span></label>
+                    </div>
+                    <!-- <input id="password-input" type="password" value="" placeholder="password"> -->
+
+                    <div class="name-input">
+                        <input id="password-input" name="fname" type="password" value="" autocomplete="off" required =''>
+                    <label for="password" class="name-label"><span class="user-name">Password</span></label>
+                    </div>
+
                     <input class="login-btn" type="button" value="Login">
+
                 </form>
             </div>
 
