@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/new post.css">
+    <title>Update post</title>
+</head>
+<body>
+
+    <div class="navbar-left">
+        <a href="./new post.html">New post</a>
+        <a href="./messages.html">Messages</a>
+        <a href="./dashboard.html">ADMIN</a>
+    </div>
+
+    <div class="container">
+        <form action="" style="width: 40%;">
+        <h1>Update Post</h1> 
+        <div>
+            <h3>Post Title</h3>
+            <textarea name="" id="post-title" cols="55" rows="1.7" placeholder="enter the post title"></textarea>
+        </div>
+        
+        <div>
+            <h3>Update an Image</h3>
+            <input type="file" name="" id="post-image">
+            <img id="img-element" src="" alt="" style="width: 100%;">
+        </div>
+
+        <div class="post-body">
+            <h3>Post Body</h3>
+            <textarea name="" id="post-body" cols="30" rows="10" placeholder="post body"></textarea>
+            <input class="post-btn" type="submit" value="Update">
+        </div>
+    </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/update post.js"></script>
+</body>
+</html>

@@ -4,6 +4,15 @@
         background-color: rgb(214, 212, 212);
     }
 
+.container form{
+    width: 40%;
+    margin: 0 30% 0 30%;
+}
+
+.container form textarea, input{
+    width: 100%;
+}
+
 .navbar-left{
     margin-right: 30px;
     text-decoration: none;

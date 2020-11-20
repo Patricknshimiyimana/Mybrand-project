@@ -24,6 +24,11 @@ body{
     /* background-color: #262525; */
 }
 
+/* post style in dashbaord */
+.post img{
+    width: 100%;
+}
+
 .primary-p-text{
     color: #a5aaad;
     font-size: 14px;
