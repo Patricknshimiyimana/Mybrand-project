@@ -91,3 +91,22 @@ logoutBtn.addEventListener('click', (e) => {
     
     
 // });
+
+
+// subscribing users to the blog
+
+let subscriberEmail = document.getElementById('email-form');
+let subscribeBtn = document.querySelector('.subscribe-btn');
+let form = document.querySelector('.form');
+
+subscribeBtn.addEventListener('click', (e) =>{
+    e.preventDefault();
+    db.collection('subscribers').add({
+        email: subscriberEmail.value
+
+    });
+
+    alert('successfully subscribed');
+    form.reset();
+})
+
