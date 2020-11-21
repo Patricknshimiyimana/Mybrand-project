@@ -10,6 +10,7 @@ let userName = document.getElementById('name'),
 
 sendBtn.addEventListener('click', (e) =>{
     e.preventDefault();
+    alert('Message sent');
 
     db.collection('user-messages').add({
         name: userName.value,
