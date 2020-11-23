@@ -16,3 +16,21 @@ function toggleSidebar() {
 //         sidebarOpen = false;
 //     }
 // }
+
+// logout button
+
+const auth = firebase.auth();
+let logoutBtn = document.getElementById('logout-btn');
+
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+})
+
+auth.onAuthStateChanged(user => {
+    if (user) {
+        
+    } else {
+        window.location.href = 'login.html';
+    }
+});
