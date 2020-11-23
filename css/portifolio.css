@@ -142,46 +142,137 @@ height: 267px;
 
 }
 
-.wrap-blog {
+.wrap-posts{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 31.3% 31.3% 31.3%;
+    grid-gap: 3%;
+    justify-items: center;
+    width: 90%;
+    margin: 7% 5%;
+    
+}
+
+.post img{
+    width: 100%;
+}
+
+.post-title{
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* .wrap-blog {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 1rem;
     margin: 0 3rem;
     font-size: 2rem;
     justify-items: center;
-}
+} */
  .contact{
      display: flex;
      justify-content: space-around;
  }
  
+ .left{
+     margin-top: 40px;
+ }
+
  .right form{
+     /* position: relative; */
      display: flex;
      flex-direction: column;
  }
 
-input:focus, textarea:focus {
+ .name-input{
+     position: relative;
+     /* height: 100%; */
+     width: 300px;
+     overflow: hidden;
+ }
+
+ .name-input input{
+     height: 100%;
+     width: 100%;
+     padding-top: 20px;
+     border: none;
+     outline: none;
+     grid-row: 30px;
+     columns: 30px;
+ }
+
+.name-input label{
+    position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+     border-bottom: 1px solid grey;
+ }
+
+ .name-input label::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 3px solid #0099FF;
+    transform: translateX(-400px);
+    transition: transform 0.3s ease;
+ }
+
+ .user-name {
+     position: absolute;
+     bottom: 5px;
+     left: 0;
+     transition: all 0.3s ease;
+ }
+
+ .name-input input:focus + .name-label .user-name, .name-input input:valid + .name-label .user-name {
+     transform: translateY(-150%);
+     font-size: 14px;
+     color: #0099FF;
+     bottom: 25px;
+ }
+
+ .name-input input:focus + .name-label::after,
+ .name-input input:valid + .name-label::after {
+     transform: translateX(0%);
+ }
+
+
+
+/* input:focus, textarea:focus {
     border: none;
     border-radius: 50px;
-}
+} */
  
  form input, textarea{
      padding: 1rem;
      background: transparent;
-     border-radius: 20px;
-     border: 1px solid white;
+     /* border-radius: 20px; */
+     border: none;
+     border-bottom: 1px solid grey;
      margin: 1rem 0;
      color: #E5E5E5;
+     padding-top: 20px;
      
      /* width: 100px; */
  } 
  .submit-btn{
      background: rgb(0, 153, 255);
-     max-width: 50%;
+     max-width: 60%;
      border: none;
      outline: none;
      color: #E5E5E5;
      cursor: pointer;
+     border-radius: 20px;
+     margin-top: 30px;
  }
 
  .blog-btn {
