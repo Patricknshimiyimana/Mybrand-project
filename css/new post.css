@@ -34,9 +34,8 @@
 
 #post-body {
     display: grid;
-    margin: 0% 30%;
     text-align: center;
-    width: 40%;
+    width: 100%;
     
 }
 
@@ -45,9 +44,9 @@
 }
 
 .post-btn {
-    margin-top: 1%;
+    margin-top: 2%;
     padding: 1%;
-    width: 40%;
+    width: 100%;
 }
 
 .container {
@@ -64,12 +63,6 @@
         display: grid;
         /* width: 80%; */
         margin: 0 -60%;
-    }
-
-    .post-btn{
-        margin: 0 30%;
-        /* padding-top: 2%; */
-        margin-top: 2%;
     }
 
 }
