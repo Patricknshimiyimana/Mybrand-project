@@ -142,14 +142,29 @@ height: 267px;
 
 }
 
-.wrap-blog {
+.wrap-posts{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 31.3% 31.3% 31.3%;
+    grid-gap: 3%;
+    justify-items: center;
+    width: 90%;
+    margin: 7% 5%;
+    
+}
+
+.post img{
+    width: 100%;
+}
+
+/* .wrap-blog {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 1rem;
     margin: 0 3rem;
     font-size: 2rem;
     justify-items: center;
-}
+} */
  .contact{
      display: flex;
      justify-content: space-around;
