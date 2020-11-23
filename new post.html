@@ -16,23 +16,30 @@
 
     <div class="container">
         
-        <h1>Create New Post</h1>
+        <h1>Create New Post</h1> 
         <div>
             <h3>Post Title</h3>
-            <textarea name="" id="" cols="55" rows="1.7"></textarea>
+            <textarea name="" id="post-title" cols="55" rows="1.7" placeholder="enter the post title"></textarea>
         </div>
         
         <div>
             <h3>Upload an Image</h3>
-            <input type="file" name="" id="">
+            <input type="file" name="" id="post-image">
         </div>
 
         <div class="post-body">
             <h3>Post Body</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="post-body" cols="30" rows="10" placeholder="post body"></textarea>
             <input class="post-btn" type="submit" value="Post">
         </div>
 
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/new post.js"></script>
 </body>
 </html>

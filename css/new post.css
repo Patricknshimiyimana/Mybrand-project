@@ -23,17 +23,44 @@
     padding-bottom: 12px;
 }
 
-.post-body {
+#post-body {
     display: grid;
-    padding: 0% 35%;
+    margin: 0% 30%;
+    text-align: center;
+    width: 40%;
     
 }
 
+#post-title{
+    text-align: center;
+}
+
 .post-btn {
-    margin-top: 5%;
-    padding: 1.5%;
+    margin-top: 1%;
+    padding: 1%;
+    width: 40%;
 }
 
 .container {
     margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    #post-title {
+        width: 70%;
+    }
+
+    .post-body {
+        /* width: 25%; */
+        display: grid;
+        /* width: 80%; */
+        margin: 0 -60%;
+    }
+
+    .post-btn{
+        margin: 0 30%;
+        /* padding-top: 2%; */
+        margin-top: 2%;
+    }
+
 }
