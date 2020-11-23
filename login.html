@@ -39,17 +39,32 @@
         
 
             <div class="right">
-                <form>
+                <form id="login-form">
                     <img src="./assets/logo.PNG" alt=""> 
                     <h2>Login</h2>
-                    <input id="email-input" type="email" value="" placeholder="email">
-                    <input id="password-input" type="text" value="" placeholder="password">
-                    <input class="login-btn" type="button" value="Login" class="submit-btn" onclick="validateLogin()">
+                    <p id="error-msg"></p>
+                    <!-- <input id="email-input" type="email" value="" placeholder="email"> -->
+                    <div class="name-input">
+                        <input id="email-input" type="email" value="" autocomplete="off" required =''>
+                        <label for="email" class="name-label"><span class="user-name">Email</span></label>
+                    </div>
+                    <!-- <input id="password-input" type="password" value="" placeholder="password"> -->
+
+                    <div class="name-input">
+                        <input id="password-input" name="fname" type="password" value="" autocomplete="off" required =''>
+                    <label for="password" class="name-label"><span class="user-name">Password</span></label>
+                    </div>
+
+                    <input class="login-btn" type="button" value="Login">
+
                 </form>
             </div>
 
     </div>
 
-<script src="./js/validation.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/login.js"></script>
 </body>
 </html>

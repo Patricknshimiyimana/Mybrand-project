@@ -4,6 +4,15 @@
         background-color: rgb(214, 212, 212);
     }
 
+.container form{
+    width: 40%;
+    margin: 0 30% 0 30%;
+}
+
+.container form textarea, input{
+    width: 100%;
+}
+
 .navbar-left{
     margin-right: 30px;
     text-decoration: none;
@@ -23,17 +32,37 @@
     padding-bottom: 12px;
 }
 
-.post-body {
+#post-body {
     display: grid;
-    padding: 0% 35%;
+    text-align: center;
+    width: 100%;
     
 }
 
+#post-title{
+    text-align: center;
+}
+
 .post-btn {
-    margin-top: 5%;
-    padding: 1.5%;
+    margin-top: 2%;
+    padding: 1%;
+    width: 100%;
 }
 
 .container {
     margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    #post-title {
+        width: 70%;
+    }
+
+    .post-body {
+        /* width: 25%; */
+        display: grid;
+        /* width: 80%; */
+        margin: 0 -60%;
+    }
+
 }

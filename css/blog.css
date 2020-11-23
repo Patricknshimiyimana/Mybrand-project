@@ -2,13 +2,19 @@
 body{
     background: #262525;
     color: #E5E5E5;
-    margin: 2% 7%;
+    /* margin: 2% 7%; */
+    width: 100%;
+}
+
+.post img{
+    width: 100%;
 }
 
 
 .nav-bar{
-        display: grid;
-    background-color: #262525;
+    background-color: rgb(29, 28, 28);
+    display: grid;
+    /* background-color: #262525; */
     grid-template-columns: 15% 85%;
     /* justify-content: space-between; */
     justify-items: end;
@@ -68,8 +74,12 @@ li a {
 
 .wrap-posts{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 3rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 31.3% 31.3% 31.3%;
+    grid-gap: 3%;
+    justify-items: center;
+    width: 90%;
+    margin: 7% 5%;
     
 }
 
@@ -85,6 +95,11 @@ li a {
 }
 
 .footer{
+background-color: rgb(29, 28, 28);
+width: 100%;
+left: 0;
+right: 0;
+bottom: 0;
 display: grid;
 grid-template-columns: 2fr 1fr;
 }
@@ -154,6 +169,13 @@ grid-template-columns: 2fr 1fr;
 
    .wrap-posts{
        margin-top: 5%;
+       display: flex;
+       flex-wrap: wrap;
+
+   }
+
+   .post{
+       margin: 3%;
    }
 
 

@@ -24,6 +24,11 @@ body{
     /* background-color: #262525; */
 }
 
+/* post style in dashbaord */
+.post img{
+    width: 100%;
+}
+
 .primary-p-text{
     color: #a5aaad;
     font-size: 14px;
@@ -433,6 +438,23 @@ font-weight: 700;
     .charts-left{
         width: fit-content;
     }
+
+    /* #sidebar {
+        width: 45rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #sidebar img {
+        margin: 0 20rem;
+        width: 10rem;
+    }
+
+    .sidebar-title h1 {
+        font-size: 3rem;
+        margin: 5rem 20rem;
+    } */
+
 }
 
 

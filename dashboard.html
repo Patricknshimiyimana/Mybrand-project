@@ -53,7 +53,7 @@
                 <i></i>
                 <div class="card-inner">
                     <p class="primary-p-text" >subscribers:</p>
-                    <span class="font-bold">7</span>
+                    <span class="font-bold"> 7</span>
                 </div>
             </div>
 
@@ -61,44 +61,21 @@
                 <i></i>
                 <div class="card-inner">
                     <p class="primary-p-text" >Messages:</p>
-                    <span class="font-bold">70</span>
+                    <span class="font-bold">4</span>
                 </div>
             </div>
 
-            <div class="card">
-                <i></i>
-                <div class="card-inner">
-                    <p class="primary-p-text" >Likes:</p>
-                    <span class="font-bold">70</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <i></i>
-                <div class="card-inner">
-                    <p class="primary-p-text" >Views:</p>
-                    <span class="font-bold">70</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <i></i>
-                <div class="card-inner">
-                    <p class="primary-p-text" >Comments:</p>
-                    <span class="font-bold">70</span>
-                </div>
-            </div>
+           
 
           </div>
 
-          <div class="charts">
-              <div class="charts-left">
+          <div class="charts" >
+              <!-- <div class="charts-left">
                   <div class="charts-left-title">
                       <div class="post-title">
                           <h1>How mac is going to change</h1>
                           <p>Oct27,2020</p>
                       </div>
-                      <i></i>
                 </div>
                 <div class="post-edit">
                     <img src="./assets/blog.jpg" alt="">
@@ -106,23 +83,8 @@
                     <button class="edit-btn">Edit post</button>
                     <button class="edit-btn">Delete post</button>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="charts-right">
-                <div class="charts-right-title">
-                    <div class="post-title">
-                        <h1>How mac is going to change</h1>
-                        <p>Oct27,2020</p>
-                    </div>
-                    <i></i>
-              </div>
-
-              <div class="post-edit">
-                  <img  src="./assets/blog.jpg" alt="">
-
-                  <button class="edit-btn">Edit post</button>
-                    <button class="edit-btn">Delete post</button>
-              </div>
                
               <!-- <div class="charts-right-cards">
                   <div class="card1">
@@ -180,12 +142,18 @@
 
     <div class="sidebar-link">
         <i></i>
-        <a href="">Logout</a>
+        <a id="logout-btn" href="">Logout</a>
     </div>
       </div>
   </div>
    </div>
    
-   <script src="./js/dashboard.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/modify post.js"></script>
+<script src="./js/dashboard.js"></script>
 </body>
 </html>

@@ -90,10 +90,7 @@ form input{
      color: #E5E5E5;
 }
 
-input:focus {
-    border: none;
-    border-radius: 50px;
-}
+
 .submit-btn{
     background: rgb(0, 153, 255);
      max-width: 100%;
@@ -113,6 +110,70 @@ img {
     /* margin-top: 3rem; */
     height: 4rem;
     /* margin-left: 10rem; */
+}
+
+
+/* new login form */
+
+.name-input{
+    position: relative;
+    /* height: 100%; */
+    width: 250px;
+    overflow: hidden;
+    color: #E5E5E5;
+}
+
+.name-input input{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    grid-row: 30px;
+    columns: 30px;
+}
+
+.name-input label{
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid grey;
+}
+
+.name-input label::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -1px;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+   border-bottom: 3px solid #0099FF;
+   transform: translateX(-400px);
+   transition: transform 0.3s ease;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.name-input input:focus + .name-label .user-name, 
+.name-input input:valid + .name-label .user-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #0099FF;
+    bottom: -22px;
+}
+
+.name-input input:focus + .name-label::after,
+.name-input input:valid + .name-label::after {
+    transform: translateX(0%);
 }
 
 @media screen and ( max-width:600px) {
