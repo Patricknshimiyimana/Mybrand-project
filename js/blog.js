@@ -14,6 +14,7 @@ function renderPost(doc) {
 
     postDiv.setAttribute('data-id', doc.id);
     postDiv.setAttribute('class', 'post');
+    postTitle.setAttribute('class', 'post-title');
     postTitle.textContent = doc.data().title;
     postBody.textContent = doc.data().body;
     postImage.src = doc.data().image;

@@ -10,6 +10,12 @@ body{
     width: 100%;
 }
 
+.post-title{
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 
 .nav-bar{
     background-color: rgb(29, 28, 28);
